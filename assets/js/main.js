@@ -16,16 +16,14 @@ navItem.forEach(element => {
     });
 });
 
+// To Show Movie Details on Hover 
+let movie = document.querySelectorAll(".movie");
 
-// Movie Description on hover 
-let movieItem = document.querySelectorAll(".grid-img")
-let movieDescription = document.querySelectorAll(".img-div")
-
-movieItem.forEach(element => {
+movie.forEach(element => {
     element.addEventListener("mouseover", function(){
-        element.classList.add('hover');
-        element.nextElementSibling.style.display = "block";
-        element.nextElementSibling.innerHTML = `
+        element.firstElementChild.classList.add('img-hover');
+        element.lastElementChild.style.display = "block";
+        element.lastElementChild.innerHTML = `
         <div class="flex">
             <div class="flex">
                 <i class="fas fa-play play-btn2"></i>
@@ -51,13 +49,7 @@ movieItem.forEach(element => {
         </div>`
     })
     element.addEventListener("mouseout", function(){
-        element.classList.remove('hover');   
-        element.nextElementSibling.style.display = "none";
+        element.firstElementChild.classList.remove('img-hover');   
+        element.lastElementChild.style.display = "none";
     })
 });
-
-
-
-
-
-
