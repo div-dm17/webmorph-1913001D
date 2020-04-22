@@ -83,6 +83,7 @@ body {
 .container {
 	max-width: 1280px;
 	margin: 0 auto;
+	padding: 0 40px;
 }
 
 .flex {
@@ -162,6 +163,26 @@ input#search-box {
 	padding: 4px 4px 0 4px;
 	border-radius: 4px;
 	cursor: pointer;
+}
+
+.fa-user:hover {
+	background-color: rgb(255, 255, 255);
+}
+
+.user-hover {
+	display: none;
+	position: absolute;
+	top: 64px;
+	margin-left: -8px;
+	color: white;
+	z-index: 999;
+	background-color: #1387ec;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+.fa-user:hover ~ .user-hover {
+	display: block;
 }
 
 /********* Main Section *******/
@@ -273,12 +294,27 @@ button:hover {
 	border: 2px solid #2684fe;
 	color:white;
 	outline: none;
+	padding: 4px 20px;
 }
 
 .watch-btn:hover {
 	background-color: #ffffff;
 	border: 2px solid #ffffff;
 	color:rgb(0, 0, 0);
+}
+
+.watchlist-btn {
+	padding: 4px 20px;
+}
+
+.watch-play-icon {
+	margin-right: 16px;
+	font-size: 24px;
+}
+
+.watchlist-plus-icon {
+	margin-right: 16px;
+	font-size: 28px;
 }
 
 /****** Fan Favourites Section ******/
@@ -315,14 +351,14 @@ button:hover {
 
 .img-div {
 	display: none;
+	position: relative;
+	top: 100;
 	padding: 8px;
 	color: white;
-	width: 100%;
-	height: auto;
 	background-color: #203345;
 	transition: transform .2s;
 	transform: scale(1.1);
-	z-index: 999;
+	z-index: 99999;
 }
 
 .play-btn2 {
@@ -408,13 +444,11 @@ button:hover {
 }
 
 .language-box {
-	background-color: rgb(73, 72, 70);
 	border-radius: 12px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    width: 140px;
+	transition: box-shadow .3s;
+
 }
+
 .language-box img {
 	width: 100%;
 	border-radius: 8px;
@@ -436,6 +470,16 @@ button:hover {
 	width: 100%;
 	height: auto;
 	border-radius: 12px;
+	cursor: pointer;
+}
+
+.grid-none {
+	display: none;
+	position: absolute;
+	top: 0;
+	background-color: red;
+	padding: 20px;
+	z-index: 999;
 }
 
 .top-rated-des {

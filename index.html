@@ -22,7 +22,7 @@
     <header class="header">
         <div class="container flex">
             <div>
-                <a href="#">
+                <a href="./index.html">
                     <img class="logo-img" src="./assets/media/logo.png" alt="">
                 </a>
             </div>
@@ -30,7 +30,7 @@
                 <label for="toggle" class="ham">&#9776;</label>
                 <input type="checkbox" id="toggle" class="toggle">
                 <div class="nav-links flex">
-                    <a class="active" href="#">Home</a>
+                    <a class="active" href="./index.html">Home</a>
                     <a href="#">Movies</a>
                     <a href="#">TV shows</a>
                     <a href="#">Kids</a>
@@ -39,7 +39,10 @@
                     <input type="text" name="search box" id="search-box" placeholder="Search">
                     <i class="fas fa-search"></i>
                 </div>
-                <i class="fas fa-user" id="user-img"></i>
+                <div>
+                    <i class="fas fa-user" id="user-img"></i>
+                    <h6 class="user-hover">User</h6>
+                </div>
             </div>
         </div>
     </header>
@@ -59,9 +62,16 @@
                         <h1>"Money Heist : Part 4"</h1>
                         <p>Lives are on the line as the Professor's plan begins to unravel and the thieves <br /> must fend off enemies from both inside and outside the Bank of Spain</p>
                         <div class="flex">
-                            <button class="watch-btn btn-1">Watch</button>
-                            <button class="btn-1">Add to Wishlist</button>
-                            <a href="main.html"><button class="btn-1">Details</button></a>
+                            <div>
+                                <button class="watch-btn btn-1">
+                                    <i class="fas fa-play watch-play-icon"></i>Watch
+                                    </button>
+                            </div>
+                            <div>
+                                <button class="btn-1 watchlist-btn">                                <i class="fas fa-plus watchlist-plus-icon"></i>                                
+                                    Add to Wishlist</button>
+                            </div>
+                            <a href="./details.html"><button class="btn-1">Details</button></a>
                         </div>    
                     </div>
                 </div>
@@ -118,7 +128,8 @@
                 <h2 class="common-heading">| Watch in your language</h2>
                 <div class="language-grid">
                     <div class="language-box">
-                        <img src="./assets/media/eng.png" alt="Image"></div>
+                        <img src="./assets/media/eng.png" alt="Image">
+                    </div>
                     <div class="language-box">
                         <img src="./assets/media/hindi.png" alt="Image">
                     </div>

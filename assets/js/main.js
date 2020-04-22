@@ -17,9 +17,9 @@ navItem.forEach(element => {
 });
 
 // To Show Movie Details on Hover 
-let movie = document.querySelectorAll(".movie");
+let gridImg = document.querySelectorAll(".movie");
 
-movie.forEach(element => {
+gridImg.forEach(element => {
     element.addEventListener("mouseover", function(){
         element.firstElementChild.classList.add('img-hover');
         element.lastElementChild.style.display = "block";
