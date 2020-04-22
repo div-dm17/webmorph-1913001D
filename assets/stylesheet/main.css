@@ -111,15 +111,16 @@ a {
 	font-weight: 500;
 	font-size: 20px;
 	padding: 20px 16px;
+	color: rgb(192, 191, 191);
 }
 
 .nav-links a:hover {
-	color: rgb(252, 185, 17);
+color: white;
 }
 
-.active {
-	color: rgb(252, 185, 17);
-	border-bottom: 2px solid white;
+.nav-links .active {
+	color: white;
+	border-top: 2px solid white;
 }
 	
 input#search-box {
@@ -221,31 +222,63 @@ input#search-box {
 	font-size: 18px;
 	color: rgb(209, 200, 200);
 	font-weight: 400;
-	padding: 8px 0;
+	padding: 4px 0 12px 0;
 	line-height: 1.4;
 }
 
-.btn {
-	border: none;
+/* GENERAL BUTTON STYLING */
+
+button,
+button::after {
+	transition: all 0.3s;
+}
+
+button {
 	outline: none;
 	border: 2px solid white;
 	border-radius: 4px;
 	font-size: 22px;
 	padding: 4px 32px;
 	background: transparent;
-	color: white;
+	color: rgb(192, 191, 191);
 	cursor: pointer;
+	position: relative;
+}
+
+button::before,
+button::after {
+  background: rgb(255, 255, 255);
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #00050a;
+}
+
+.btn-1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-1:hover:after {
+  height: 100%;
 }
 
 .watch-btn {
 	background-color: #2684fe;
-	border: none;
+	border: 2px solid #2684fe;
+	color:white;
 	outline: none;
 }
 
-.btn:hover {
-	background-color: #f8f9fb;
-	color: black;
+.watch-btn:hover {
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+	color:rgb(0, 0, 0);
 }
 
 /****** Fan Favourites Section ******/
@@ -259,7 +292,7 @@ input#search-box {
 	font-weight: 700;
 	color: white;
 	font-family: 'Josefin Sans', sans-serif;
-	padding: 18px 0;
+	margin: 24px 0;
 }
 
 .grid {
@@ -289,6 +322,7 @@ input#search-box {
 	background-color: #203345;
 	transition: transform .2s;
 	transform: scale(1.1);
+	z-index: 999;
 }
 
 .play-btn2 {
@@ -363,6 +397,9 @@ input#search-box {
 
 
 /* Choose Language - Section */
+.lang-sec{
+	margin: 26px 0;
+}
 
 .language-grid {
 	display: grid;
@@ -372,11 +409,16 @@ input#search-box {
 
 .language-box {
 	background-color: rgb(73, 72, 70);
-	height: 100px;	
 	border-radius: 12px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    width: 140px;
+}
+.language-box img {
+	width: 100%;
+	border-radius: 8px;
+	cursor: pointer;
 }
 
 /* Top Rated Section */
