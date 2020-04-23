@@ -81,7 +81,7 @@ body {
 }
 
 .container {
-	max-width: 1280px;
+	max-width: 1442px;
 	margin: 0 auto;
 	padding: 0 40px;
 }
@@ -208,20 +208,20 @@ input#search-box {
 }
 
 .play-btn1 {
-	font-size: 40px;
+	font-size: 44px;
 	color: #252729;	
-	background-color: rgb(133, 127, 127);
+	background-color: rgb(182, 177, 177);
 	padding: 16px;
 	position: absolute;
 	top: 38%;
 	left: 50%;
 	cursor: pointer;
-	padding: 24px 26px 24px 30px;
+	padding: 20px 20px 20px 26px;
 	border-radius: 50%;
 }
 
 .play-btn1:hover, .play-btn2:hover {
-	background-color: rgb(189, 184, 184);
+	background-color: rgb(255, 255, 255);
 	color: black;
 }
 
@@ -240,6 +240,7 @@ input#search-box {
 }
 
 .text-over-img > p {
+	width: 88%;
 	font-size: 18px;
 	color: rgb(209, 200, 200);
 	font-weight: 400;
@@ -248,6 +249,10 @@ input#search-box {
 }
 
 /* GENERAL BUTTON STYLING */
+
+.p1-btn-flex {
+	justify-content: flex-start;
+}
 
 button,
 button::after {
@@ -287,6 +292,10 @@ button:hover {
 
 .btn-1:hover:after {
   height: 100%;
+}
+
+.details-btn {
+	margin-left: 28px;
 }
 
 .watch-btn {
@@ -351,14 +360,14 @@ button:hover {
 
 .img-div {
 	display: none;
-	position: relative;
-	top: 100;
+	position: absolute;
+	top: 174px;
 	padding: 8px;
 	color: white;
 	background-color: #203345;
 	transition: transform .2s;
 	transform: scale(1.1);
-	z-index: 99999;
+	z-index: 999;
 }
 
 .play-btn2 {
@@ -378,9 +387,13 @@ button:hover {
 	color: rgb(13, 214, 56);
 }
 
+.movie {
+	position: relative;
+}
+
 .movie-name {
 	padding-left: 8px;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 500;
 	cursor: pointer;
 }
@@ -446,13 +459,18 @@ button:hover {
 .language-box {
 	border-radius: 12px;
 	transition: box-shadow .3s;
-
 }
 
 .language-box img {
 	width: 100%;
+	height: 100%;
 	border-radius: 8px;
 	cursor: pointer;
+	font-size: 0;
+}
+
+.language-box:hover {
+	transform: scale(0.9);
 }
 
 /* Top Rated Section */
@@ -643,6 +661,12 @@ button:hover {
 /* Responsive */
 
 @media all and (max-width: 768px) {
+	.container {
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+	}
+	
 	.header {
 	  background-color: black;
 	  padding: 4px 8px;
@@ -730,3 +754,99 @@ button:hover {
 		margin: 0 16px;
 	}
 }
+
+
+/* Page 2 CSS */
+
+.pg2-hero-grid {
+	display: flex;
+	justify-content: space-between;
+}
+
+.title-heading {
+	font-size: 44px;
+	font-weight: 700;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.col-1 {
+	/* border: 1px solid white; */
+	padding-top: 60px ;
+	width: 44%;
+}
+
+.title-des {
+	padding: 16px 0;
+	justify-content: flex-start;
+}
+
+.duration2 {
+	padding-left: 0;
+}
+
+.mov-desc {
+	font-size: 18px;
+	color: rgb(218, 216, 216);
+	line-height: 1.5;
+}
+
+.btn-flex {
+	justify-content: flex-start;
+	margin: 32px 0;
+}
+
+.watchlist-btn {
+	margin-left: 28px;
+}
+
+.list {
+	display: flex;
+}
+
+.list > ul {
+	color: rgb(175, 172, 172);
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.list ul > li {
+	line-height: 1.6;
+}
+
+.ul1 {
+	width: 36%;
+}
+
+.ul2{
+	width: 74%;
+}
+
+.blue-color {
+	color: #2682fa;
+}
+
+/* Col-2 */
+
+.col-2 {
+	/* border: 1px solid white; */
+	width: 52%;
+	position: relative;
+}
+
+.col-2 img {
+	width: 100%;
+	height: 100%;
+}
+
+.footer-page2 {
+	margin: 160px 0 0 0;
+}
+
+.pg2-playbtn {
+	position: absolute;
+	top: 40%;
+	left: 48%;
+}
+
+
