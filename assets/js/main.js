@@ -72,7 +72,7 @@ let movieData = [
     {
         mID:"id7",
         movieName:"DDLJ",
-        movieDes:"DDLJ is an Indian romance film, directed by Aditya Chopra",
+        movieDes:"Dilwale Dulhaniya Le Jayenge is an Indian romance film, directed by Aditya Chopra",
         movieDur: "3 hr 09 min",
         relYear: "1995",
         movieRating: "4.2"  
