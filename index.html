@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Website designed by the student of AKGEC" />
+    <meta name="description" content="WebMorph 1.0 - The Frontend Challenge Organized by Software Incubator, Ajay Kumar Garg Enginerring College Ghaziabad  " />
     <!-- Website Title -->
-    <title>WebMorph | Software Incubator | AKGEC | Ajay Kumar Garg Engineering College Ghaziabad</title>
+    <title>WebMorph | Software Incubator | AKGEC </title>
     <!-- Website Icon -->
     <link rel="shortcut icon" href="./assets/media/akg-logo.png" type="image/x-icon">
     <!-- CSS -->
@@ -15,13 +16,16 @@
     <script defer src="./assets/js/main.js"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN-->
+    <script src="https://kit.fontawesome.com/f4ce9ea80b.js" crossorigin="anonymous"></script>   
 </head>
 <body onload="loaderFn()">
+    <!-- Loader -->
     <div id="loader"></div>
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" id="top">
         <div class="container flex">
-            <div>
+            <div class="logo">
                 <a href="./index.html">
                     <img class="logo-img" src="./assets/media/logo.png" alt="">
                 </a>
@@ -46,6 +50,7 @@
             </div>
         </div>
     </header>
+
     <!-- Main Section -->
     <main class="main">
         <!-- Container -->
@@ -62,17 +67,19 @@
                         <h1>"Money Heist : Part 4"</h1>
                         <p>Lives are on the line as the Professor's plan begins to unravel and the thieves must fend off enemies from both inside and outside the Bank of Spain</p>
                         <div class="flex p1-btn-flex">
-                            <div>
+                            <div class="p-btn">
                                 <button class="watch-btn btn-1">
                                     <i class="fas fa-play watch-play-icon"></i>Watch
                                     </button>
                             </div>
-                            <div>
+                            <div class="p-btn">
                                 <button class="btn-1 watchlist-btn">                                
                                     <i class="fas fa-plus watchlist-plus-icon"></i>                                
                                     Add to Wishlist</button>
                             </div>
-                            <a href="./details.html"><button class="btn-1 details-btn">Details</button></a>
+                            <div class="p-btn">
+                                <a href="./details.html"><button class="btn-1 details-btn">Details</button></a>
+                            </div>
                         </div>    
                     </div>
                 </div>
@@ -102,7 +109,7 @@
             </section>
             <!-- Fan Favourite Section End -->
             <!-- Bollywood Binge Section -->
-            <section class="fan-fav-section">
+            <section class="bolly-binge-sec">
                 <h2 class="common-heading">| Bollywood Binge</h2>
                 <div class="grid">
                     <div class="movie">
@@ -183,10 +190,10 @@
             </section>
             <!-- Top Rated Videos Section End -->
             <!-- Choose by Genere Section -->
-            <section class="fan-fav-section">
+            <section class="choose-genere-sec">
                 <h2 class="common-heading">| Choose by Genere</h2>
                 <div class="grid">
-                    <div class="">
+                    <div class="genere-div">
                         <img class="grid-img" src="./assets/media/genere-ddlj-img1.jpg" alt="Image">
                         <div class="flex genere-des">
                             <h4>Romance</h4>
@@ -196,7 +203,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="">
+                    <div class="genere-div">
                         <img class="grid-img" src="./assets/media/genere-nwz-img2.jpg" alt="Image">
                         <div class="flex genere-des">
                             <h4>Drama</h4>
@@ -206,7 +213,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="">
+                    <div class="genere-div">
                         <img class="grid-img" src="./assets/media/genere-action-img3.jpg" alt="Image">
                         <div class="flex genere-des">
                             <h4>Action</h4>
@@ -216,7 +223,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="">
+                    <div class="genere-div">
                         <img class="grid-img" src="./assets/media/genere-comedy-img4.jpg" alt="Image">
                         <div class="flex genere-des">
                             <h4>Comedy</h4>
@@ -269,8 +276,13 @@
                 <p>&copy; - 2020 by Flux.com, Inc.</p>
             </div>    
         </section>
+        <!-- Back to top button -->
+        <div class="back-to-top">
+            <a class="b2t-btn" href="#top">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
     </footer>
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/f4ce9ea80b.js" crossorigin="anonymous"></script>   
+    <!-- Footer End -->
 </body>
 </html>

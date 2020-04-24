@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,8 @@
     <script defer src="./assets/js/main.js"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/f4ce9ea80b.js" crossorigin="anonymous"></script>   
 </head>
 <body onload="loaderFn()">
     <div id="loader"></div>
@@ -49,13 +52,12 @@
     <!-- Main Section -->
     <main class="main">
         <section class="container">
-
             <!-- Hero Section -->
             <div class="pg2-hero-grid">
                 <div class="col-1">
                     <h1 class="title-heading">"Money Heist : Part 4"</h1>
                     <div class="flex title-des">
-                        <small class="duration duration2"> 2hr 33 min</small>
+                        <small class="duration pg2-duration2"> 2hr 33 min</small>
                         <small class="release-year release-year2">2019</small>
                         <div class="flex">
                             <i class="far fa-star star2"></i>
@@ -70,7 +72,7 @@
                             </button>
                         </div>
                         <div>
-                            <button class="btn-1 watchlist-btn">
+                            <button class="btn-1 pg2-watchlist-btn">
                                 <i class="fas fa-plus watchlist-plus-icon"></i>Add to Wishlist
                             </button>
                         </div>
@@ -95,15 +97,9 @@
                 <div class="col-2">
                     <img src="./assets/media/pg2-mh.jpg" alt="Image">
                     <i class="fas fa-play play-btn1 pg2-playbtn"></i>
-                    <!-- <video width="100%" height="100%" controls poster="./assets/media/hero-sec-img2.png">
-                        <source src="./assets/media/mhest.mp4" type="video/mp4">
-                        <source src="https://www.youtube.com/watch?v=p_PJbmrX4uk" type="video/ogg">
-                      Your browser does not support the video tag.
-                    </video> -->
                 </div>
             </div>
             <!-- Hero Section End  -->
-
             <!-- Fan Favourites Section -->
             <section class="fan-fav-section">
                 <h2 class="common-heading">| Fan Favourites</h2>
@@ -127,7 +123,6 @@
                 </div>
             </section>
             <!-- Fan Favourite Section End -->
-
         </section>
     </main>
     <!-- Main Section End -->
@@ -160,8 +155,14 @@
                 <p>&copy; - 2020 by Flux.com, Inc.</p>
             </div>    
         </section>
+        <!-- Back to top button -->
+        <div class="back-to-top">
+            <a class="b2t-btn" href="#top">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+
     </footer>
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/f4ce9ea80b.js" crossorigin="anonymous"></script>   
+    <!-- Footer Section End -->
 </body>
 </html>

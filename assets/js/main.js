@@ -5,7 +5,7 @@ function loaderFn() {
     loader.style.display = "none";
 }
 
-// Nav Bar Active Tab Show
+// Header - Nav Bar Active Tab Show
 let navBar = document.querySelector(".nav-links");
 let navItem = document.querySelectorAll(".nav-links > a")
 
@@ -18,7 +18,6 @@ navItem.forEach(element => {
 
 
 // Array of Movie details
-
 let movieData = [
     {
         mID:"id1",
