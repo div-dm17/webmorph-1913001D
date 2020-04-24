@@ -815,7 +815,7 @@ button:hover {
 	  right: 0;
 	  left: 0;
 	  text-align: left;
-	  padding-top: 50%;
+	  padding-top: 40%;
 	  height: 100vh;
 	  background-color: #152535;
 	  z-index: 99;
@@ -827,7 +827,7 @@ button:hover {
 	.nav-links a {
 	  color: white;
 	  padding: 24px 0;
-	  font-size: 1.6rem;
+	  font-size: 1.4rem;
 	  display: flex;
 	  flex-direction: column;
 	  align-items: center;
@@ -855,12 +855,15 @@ button:hover {
 	.hero-sec-col1 img {
 		padding-top: 12px;
 	}
-	.play-btn1 {
+	.pg2-playbtn, .play-btn1 {
 		position: absolute;
 		font-size: 1rem;
 		padding: 12px 10px 10px 12px;
-		top: 15%;
+		top: 50%;
 	}	
+	.play-btn1 {
+		top:20%
+	}
 	.text-over-img {
 		position: relative;
 		left: 0px;
@@ -942,11 +945,11 @@ button:hover {
 		width:100%;
 		padding: 16px;
 	}
+	.list {
+		font-size: 0.8rem;
+	}
 	.title-heading {
 		font-size: 1.8rem;
-	}
-	.play-btn1, .pg2-playbtn {
-		display: none;
 	}
 }
 
